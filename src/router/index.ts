@@ -9,6 +9,12 @@ import Call from '../components/Call.vue'
 import Login from '../components/Login.vue'
 import Products from '../components/Products.vue'
 
+import Fehrest from '../components/rahnema/Fehrest.vue'
+import Mahsol from '../components/rahnema/Mahsol.vue'
+import Zargam from '../components/rahnema/Zargam.vue'
+import Porsesh from '../components/rahnema/Porsesh.vue'
+import Harim from '../components/rahnema/Harim.vue'
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -53,9 +59,29 @@ const router = createRouter({
       component: Products
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/AboutView.vue')
+      path: '/fehrest',
+      name: '/fehrest',
+      component: Fehrest
+    },
+    {
+      path: '/mahsol',
+      name: '/mahsol',
+      component: Mahsol
+    },
+    {
+      path: '/harim',
+      name: '/harim',
+      component: Harim
+    },
+    {
+      path: '/zargam',
+      name: '/zargam',
+      component: Zargam
+    },
+    {
+      path: '/porsesh',
+      name: '/porsesh',
+      component: Porsesh
     }
   ]
 })
