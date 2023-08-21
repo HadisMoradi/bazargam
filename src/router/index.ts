@@ -15,6 +15,8 @@ import Zargam from '../components/rahnema/Zargam.vue'
 import Porsesh from '../components/rahnema/Porsesh.vue'
 import Harim from '../components/rahnema/Harim.vue'
 
+import NotFound from '../views/NotFound.vue'
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -82,6 +84,12 @@ const router = createRouter({
       path: '/porsesh',
       name: '/porsesh',
       component: Porsesh
+    },
+    //not found
+    {
+      path:'/:catchAll(.*)',
+      name: 'NotFound',
+      component: NotFound
     }
   ]
 })
