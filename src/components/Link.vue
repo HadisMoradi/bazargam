@@ -121,10 +121,6 @@
 				</div>
 			</section>
 		</div>
-  
-  
-  
-  <button>دریافت اپلیکیشن</button>
 </template>
 
 <script>

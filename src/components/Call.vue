@@ -84,7 +84,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .k{
     font-size: xx-large;
     color: black;

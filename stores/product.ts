@@ -6,7 +6,7 @@ interface Product {
     weight: string
     src: string
     price: string
-    grooh: string
+    group: string
 }
 
 type State = {
@@ -24,7 +24,7 @@ export const productsStore = defineStore('product', {
                     weight: '۸۰ برگ',
                     src: "../../public/-60-.jpg",
                     price: "$ 35,000 T",
-                    grooh: "ggg"
+                    group: "row-1"
                 },
                 {
                     id: 2,
@@ -32,7 +32,7 @@ export const productsStore = defineStore('product', {
                     weight: 'تک تیغه',
                     src: "../../public/-.jpg",
                     price: "$ 12,500 T",
-                    grooh: "ggg"
+                    group: "row-1"
                 },
                 {
                     id: 3,
@@ -40,7 +40,7 @@ export const productsStore = defineStore('product', {
                     weight: '۲۴ عددی',
                     src: "../../public/-24-.jpg",
                     price: "$ 63,000 T",
-                    grooh: "ggg"
+                    group: "row-1"
                 },
                 {
                     id: 4,
@@ -48,7 +48,7 @@ export const productsStore = defineStore('product', {
                     weight: '۰.۵ مغز',
                     src: "../../public/-05-.jpg",
                     price: "$ 28,500 T",
-                    grooh: "ggg"
+                    group: "row-1"
                 },
                 {
                     id: 5,
@@ -56,7 +56,7 @@ export const productsStore = defineStore('product', {
                     weight: '۵۰ برگ',
                     src: "../../public/-50-.jpg",
                     price: "$ 57,000 T",
-                    grooh: "ggg"
+                    group: "row-1"
                 },
 // SHELF 2
                 {
@@ -65,7 +65,7 @@ export const productsStore = defineStore('product', {
                     weight: '240 g',
                     src: "../../public/-11-.jpg",
                     price: "$ 8,500,000 T",
-                    grooh: "bbb"
+                    group: "row-2"
                 },
                 {
                     id: 2,
@@ -73,7 +73,7 @@ export const productsStore = defineStore('product', {
                     weight: '215 g',
                     src: "../../public/-22-.jpg",
                     price: "$ 1,230,000 T",
-                    grooh: "bbb"
+                    group: "row-2"
                 },
                 {
                     id: 3,
@@ -81,7 +81,7 @@ export const productsStore = defineStore('product', {
                     weight: '305',
                     src: "../../public/-33-.jpg",
                     price: "$ 9,800,000 T",
-                    grooh: "bbb"
+                    group: "row-2"
                 },
                 {
                     id: 4,
@@ -89,7 +89,7 @@ export const productsStore = defineStore('product', {
                     weight: '265 g',
                     src: "../../public/-44-.jpg",
                     price: "$ 3,860,000 T",
-                    grooh: "bbb"
+                    group: "row-2"
                 },
                 {
                     id: 5,
@@ -97,7 +97,7 @@ export const productsStore = defineStore('product', {
                     weight: '320 g',
                     src: "../../public/-55-.jpg",
                     price: "$ 5,700,000 T",
-                    grooh: "bbb"
+                    group: "row-2"
                 },
 
             ],

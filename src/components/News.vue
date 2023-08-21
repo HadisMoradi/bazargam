@@ -192,7 +192,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .m{
     font-size: xx-large;
     color: black;
