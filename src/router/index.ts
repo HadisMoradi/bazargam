@@ -16,6 +16,7 @@ import Porsesh from '../components/rahnema/Porsesh.vue'
 import Harim from '../components/rahnema/Harim.vue'
 
 import NotFound from '../views/NotFound.vue'
+import Details from '../components/Details.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -84,6 +85,12 @@ const router = createRouter({
       path: '/porsesh',
       name: '/porsesh',
       component: Porsesh
+    },
+    {
+      path: '/details/:id',
+      name: 'details',
+      component: Details,
+      props: true
     },
     //not found
     {
