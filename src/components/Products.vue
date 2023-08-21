@@ -29,16 +29,40 @@
 
     </div>
   </div>
+<!-- shelf 3 -- fetch -->
+<div v-if="ProductsStore.object.length<1">loading ....</div>
+  <div v-else class="background">
+    
+    <div v-for="product in ProductsStore.object" :key="product.id" 
+    style="border: 2px solid black; margin: 10px; border-radius: 10px; padding: 10px;">
+      <router-link  :to="{name : 'details' , params : {id : product.id}}">
+        <img style="width: 256px;" :src="product.image" alt="">
+        <h1> title :{{ product.title }}</h1>
+        <h2>Price  : {{ product.price }}</h2>
+      </router-link>
 
-
-
+    </div>
+  </div>
 </template>
 
+<!-- <script setup lang="ts">
+
+  import { productsStore } from '../../stores/product'
+  const ProductsStore = productsStore()
+  
+  import { ref, onMounted } from 'vue'
+  onMounted(() => {
+  ProductsStore.readp()
+}) -->
+
 <script setup lang="ts">
+  import { ref, onMounted } from 'vue'
+import { productsStore } from '../../stores/product'
+const ProductsStore = productsStore()
+onMounted(() => {
 
-import { productsStore } from "../../stores/product";
-  const ProductsStore = productsStore();
-
+  ProductsStore.readp()
+})
 </script>
 
 <style scoped>
